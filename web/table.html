@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <b>From :</b>
+    <input id="from" type="datetime-local"></input>
+    <b>To :</b>
+    <input id="to" type="datetime-local"></input>
+    <button onclick="Search()">Search</button>
+    <button onclick="exportData()">Download</button>
+    <div id="tableku"></div>
+</body>
+
+</html>
+<script type="text/javascript" src="../DTI/js/xlsx.full.min.js"></script>
+<script>
+    var jsontabel = [];
+    function gm(mon) {
+        var d = Date.parse(mon + "1, 2012");
+        if (!isNaN(d)) {
+            var res = "";
+            if (String(new Date(d).getMonth() + 1).length < 2) {
+                res = "0" + String(new Date(d).getMonth() + 1);
+            } else {
+                res = String(new Date(d).getMonth() + 1);
+            }
+            return res;
+        }
+        return -1;
+    }
+    function Search() {
+        var from = ((new Date(document.getElementById("from").value)).getTime());
+        var to = ((new Date(document.getElementById("to").value)).getTime());
+        if (from < to) {
+            var http = new XMLHttpRequest();
+            http.open("GET", "http://192.168.0.101:1880/GetDataFromTo?From=" + String(from) + "&To=" + String(to), true);
+            http.send();
+            http.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var data = JSON.parse(this.responseText);
+                    jsontabel = data;
+                    var len = data.length;
+                    var column = Object.keys(data[0]);
+                    var table = "<table style='text-align: center;' border='1'>";
+                    table += "<tr>";
+                    for (i = 0; i < column.length; i++) {
+
+                        table += "<th>";
+                        if (i == 0) {
+                            table += "Date";
+                        } else {
+                            table += String(column[i]);
+                        }
+                        table += "</th>";
+                    }
+                    table += "</tr>";
+                    for (i = 0; i < data.length; i++) {
+                        table += "<tr>";
+                        for (j = 0; j < column.length; j++) {
+                            table += "<td>";
+                            if (j == 0) {
+                                table += String(new Date(data[i][column[j]])).split(" ")[2] + "/" + String(gm(String(new Date(data[i][column[j]])).split(" ")[1])) + "/" + String(new Date(data[i][column[j]])).split(" ")[3] + " " + String(new Date(data[i][column[j]])).split(" ")[4].substring(0, 5);
+                            } else {
+                                table += (data[i][column[j]]);
+                            }
+                            table += "</td>";
+                        }
+                        table += "</tr>";
+                    }
+                    table += "</table>";
+                    document.getElementById("tableku").innerHTML = table;
+                }
+            }
+        } else {
+            alert("Invalid Date");
+        }
+    }
+    function exportData() {
+        filename = 'ExportData.xlsx';
+        var data = jsontabel;
+        alert(data[0]['epo']);
+        alert(data.length);
+        var column = Object.keys(data[0]);
+        for (i = 0; i < data.length; i++) {
+            data[i]['Date'] = String(new Date(data[i][column[0]])).split(" ")[2] + "/" + String(gm(String(new Date(data[i][column[0]])).split(" ")[1])) + "/" + String(new Date(data[i][column[0]])).split(" ")[3] + " " + String(new Date(data[i][column[0]])).split(" ")[4].substring(0, 5);
+            delete data[i][column[0]];
+        }
+        // var data = [{ "Market": "IN", "New Arrivals": "6", "Upcoming Appointments": "2", "Pending - 1st Attempt": "4" }, { "Market": "KS/MO", "New Arrivals": "4", "Upcoming Appointments": "4", "Pending - 1st Attempt": "2" }, { "Market": "KS/MO", "New Arrivals": "4", "Upcoming Appointments": "4", "Pending - 1st Attempt": "2" }, { "Market": "KS/MO", "New Arrivals": "4", "Upcoming Appointments": "4", "Pending - 1st Attempt": "2" }];
+        var ws = XLSX.utils.json_to_sheet(data);
+        var wb = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(wb, ws, "People");
+        XLSX.writeFile(wb, filename);
+    }
+</script>
+</script>

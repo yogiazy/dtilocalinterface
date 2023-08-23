@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Water Treatment Plant Dashboard</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .login-container {
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-container form label,
+        .login-container form input {
+            margin-bottom: 10px;
+        }
+
+        .login-container form input[type="text"],
+        .login-container form input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        .login-container form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-container form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Water Treatment Plant Dashboard</h2>
+        <form onsubmit="return login()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            // TODO: Add login functionality
+			// Dummy user credentials
+            var dummyUsername = "admin";
+            var dummyPassword = "password";
+
+            // Get the entered username and password
+            var enteredUsername = document.getElementById("username").value;
+            var enteredPassword = document.getElementById("password").value;
+
+            // Check if the entered credentials match the dummy user
+            if (enteredUsername === dummyUsername && enteredPassword === dummyPassword) {
+                // Redirect to index.html
+                window.location.href = "index.html";
+                return false; // Prevent form submission
+            } else {
+                alert("Invalid username or password");
+                return false; // Prevent form submission
+            }
+            
+        }
+    </script>
+</body>
+</html>

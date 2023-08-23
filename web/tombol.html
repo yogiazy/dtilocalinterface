@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Button
+    <div id="controlbutton"></div>
+</body>
+
+</html>
+
+<script>
+    var datarelay = [];
+    function takedatarelay() {
+        var http = new XMLHttpRequest();
+        http.open("GET", "http://192.168.0.101:1880/GetStatusRelay", true);
+        http.send();
+        http.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var data = JSON.parse(this.responseText);
+                datarelay = data;
+                createbutton();
+            }
+        }
+    }
+    function createbutton() {
+        var id = document.getElementById("controlbutton");
+        var button = ""
+        var column = Object.keys(datarelay[0]);
+        for (i = 0; i < column.length; i++) {
+            var color = ""
+            if (datarelay[0][column[i]] == 0) {
+                color = "rgb(255, 0, 0)";
+            } else {
+                color = "rgb(0,0,255)";
+            }
+            button += "<button id='" + String(column[i]) + "' style='background-color: " + String(color) + ";'";
+            button += 'onclick="SendCommand(this.id)"';
+            button += ">";
+            button += column[i];
+            button += "</button>";
+        }
+        id.innerHTML = button;
+    }
+    function SendCommand(address) {
+        var http = new XMLHttpRequest();
+        http.open("GET", "http://192.168.0.101:1880/SendCommand?address="+String(address), true);
+        http.send();
+        http.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var data = JSON.parse(this.responseText);
+                takedatarelay();
+                createbutton();
+            }
+        }
+    }
+    function start() {
+        takedatarelay();
+    }
+    start();
+</script>

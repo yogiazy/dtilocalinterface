@@ -1,0 +1,712 @@
+<!--
+=========================================================
+* Argon Dashboard 2 - v2.0.4
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <title>
+    Water Treatment Plant - Drupadi Tirta Intan 
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="./assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body class="g-sidenav-show   bg-gray-100">
+  <div class="min-height-300 bg-primary position-absolute w-100"></div>
+  <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0" href="  " target="_blank">
+        <img src="./assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
+        <span class="ms-1 font-weight-bold">WTP Drupadi Tirta Intan </span>
+      </a>
+    </div>
+    <hr class="horizontal dark mt-0">
+    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " href="./index.html">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./Overview.html">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Overview</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./Dosing.html">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+				<i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Dosing</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./Clarifier.html">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+				<i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Clarifier</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./Filter.html">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+				<i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Filter</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./Reservoir.html">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+				<i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Reservoir & Distribution</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./tables.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Tables</span>
+          </a>
+        </li>
+        <li class="nav-item mt-3">
+          
+    </div>
+  </aside>
+  <main class="main-content position-relative border-radius-lg ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
+      <div class="container-fluid py-1 px-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
+            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Reservoir</li>
+          </ol>
+          <h6 class="font-weight-bolder text-white mb-0">Reservoir</h6>
+        </nav>
+        
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid py-4">
+      <div class="row">
+        
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Turbidity Product</p>
+                    <h5 class="font-weight-bolder">
+                      0.93 NTU
+                    </h5>
+                    <p class="mb-0">
+                      <span class="text-success text-sm font-weight-bolder">  </span>
+                        
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-danger shadow-success text-center rounded-circle">
+                    <!-- <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">pH Product</p>
+                    <h5 class="font-weight-bolder">
+                      7.00 pH
+                    </h5>
+                    <p class="mb-0">
+                      <span class="text-success text-sm font-weight-bolder">  </span>
+                        
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-danger shadow-success text-center rounded-circle">
+                    <!-- <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Chlorine</p>
+                    <h5 class="font-weight-bolder">
+                      0.00 ppm
+                    </h5>
+                    <p class="mb-0">
+                      <span class="text-success text-sm font-weight-bolder">  </span>
+                        
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-danger shadow-success text-center rounded-circle">
+                    <!-- <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4 mt-2">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Reservoir Height</p>
+                    <h5 class="font-weight-bolder">
+                      170.4 cm
+                    </h5>
+                    <p class="mb-0">
+                      <span class="text-success text-sm font-weight-bolder">  </span>
+                        
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
+                    <!-- <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4 mt-2">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Reservoir Volume</p>
+                    <h5 class="font-weight-bolder">
+                      2.301 m3
+                    </h5>
+                    <p class="mb-0">
+                      <span class="text-success text-sm font-weight-bolder">  </span>
+                        
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
+                    <!-- <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4 mt-2">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Distrution Flow Rate</p>
+                    <h5 class="font-weight-bolder">
+                      0.0 LPS
+                    </h5>
+                    <p class="mb-0">
+                      <span class="text-success text-sm font-weight-bolder">  </span>
+                        
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow-success text-center rounded-circle">
+                    <!-- <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+	  <div class="row mt-4">
+		<div class="col-lg-6 mb-lg-0 mb-4">
+			<div class="card z-index-2 h-100">
+			  <img src="/Reservoir.png">
+			  <!-- <div class="card-header pb-0 pt-3 bg-transparent"> -->
+				<!-- <h6 class="text-capitalize">3D</h6> -->
+				<!-- <p class="text-sm mb-0"> -->
+				  <!-- <i class="fa fa-arrow-up text-success"></i> -->
+				  <!-- <span class="font-weight-bold">55% more</span> since yesterday -->
+				<!-- </p> -->
+			  <!-- </div> -->
+			  <!-- model-viewer -->
+			  <!-- <model-viewer src="dosing.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls disable-zoom poster="" shadow-intensity="0" exposure="1.5" camera-orbit="50.69deg 70.59deg 88.51m" field-of-view="20.11deg" shadow-softness="0"> -->
+				<!-- <button class="Hotspot" slot="hotspot-1" data-surface="0 0 22 20 23 0.461 0.408 0.131" data-visibility-attribute="visible">
+					<div class="HotspotAnnotation">RESERVOIR</div>
+				</button><button class="Hotspot" slot="hotspot-2" data-surface="28 0 44 47 52 0.008 0.714 0.278" data-visibility-attribute="visible">
+					<div class="HotspotAnnotation">DISTRIBUTION</div>
+				</button><button class="Hotspot" slot="hotspot-4" data-surface="1 0 125 124 123 0.148 0.310 0.542" data-visibility-attribute="visible">
+					<div class="HotspotAnnotation">FILTER</div>
+				</button><button class="Hotspot" slot="hotspot-7" data-surface="29 0 44 52 49 0.802 0.059 0.139" data-visibility-attribute="visible">
+					<div class="HotspotAnnotation">RAW WATER / RIVER</div>
+				</button> -->
+				<!-- <div class="progress-bar hide" slot="progress-bar">
+					<div class="update-bar"></div>
+				</div>
+				<button slot="ar-button" id="ar-button">
+					View in your space
+				</button>
+				<div id="ar-prompt">
+					<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+				</div> -->
+			<!-- </model-viewer>
+			</model-viewer>
+			<script type="module"
+					src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+			</script> -->
+
+			<!-- Loads <model-viewer> for old browsers like IE11: -->
+			<!-- <script nomodule
+					src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+			</script> -->
+			</div>
+		  </div>
+	  
+
+
+    
+      <div class="col-lg-6 mb-lg-0 mb-4">
+
+
+        <div class="card z-index-2 h-100">
+
+          <div class="card card-plain">
+            <div class="card-header pb-0 text-start">
+              <h4 class="font-weight-bolder">Distribution Pump</h4>
+              <p class="mb-0">Status </p>
+            </div>
+            <div class="card-body">
+              <div class="text-left">
+                <button type="button" class="btn btn-lg btn-primary btn-lg w-30 mt-4 mb-0" style="font-size: 10px;">Pump 1</button>
+                <button type="button" class="btn btn-lg btn-primary btn-lg w-30 mt-4 mb-0" style="font-size: 10px;">Pump 2</button>
+                <button type="button" class="btn btn-lg btn-primary btn-lg w-30 mt-4 mb-0" style="font-size: 10px;">Pump 3</button>
+             
+              </div>
+            </div>  
+          </div>
+          <div class="card card-plain">
+            <div class="card-header pb-0 text-start">
+              <h4 class="font-weight-bolder">Backwash Pump</h4>
+              <p class="mb-0">Status </p>
+            </div>
+            <div class="card-body">
+              <div class="text-left">
+                <button type="button" class="btn btn-lg btn-primary btn-lg w-45 mt-4 mb-0" style="font-size: 10px;">Pump 1</button>
+                <button type="button" class="btn btn-lg btn-primary btn-lg w-45 mt-4 mb-0" style="font-size: 10px;">Pump 2</button>
+               
+             
+              </div>
+            </div>  
+          </div>
+          
+          
+
+
+        </div>
+      </div>
+    
+    </div>
+
+
+
+    
+		
+        <!-- <div class="col-lg-5">
+          <div class="card">
+            <div class="card-header pb-0 p-3">
+              <h6 class="mb-0">Categories</h6>
+            </div>
+            <div class="card-body p-3">
+              <ul class="list-group">
+                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                      <i class="ni ni-mobile-button text-white opacity-10"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="mb-1 text-dark text-sm">Devices</h6>
+                      <span class="text-xs">250 in stock, <span class="font-weight-bold">346+ sold</span></span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+                  </div>
+                </li>
+                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                      <i class="ni ni-tag text-white opacity-10"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="mb-1 text-dark text-sm">Tickets</h6>
+                      <span class="text-xs">123 closed, <span class="font-weight-bold">15 open</span></span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+                  </div>
+                </li>
+                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                      <i class="ni ni-box-2 text-white opacity-10"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="mb-1 text-dark text-sm">Error logs</h6>
+                      <span class="text-xs">1 is active, <span class="font-weight-bold">40 closed</span></span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+                  </div>
+                </li>
+                <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                      <i class="ni ni-satisfied text-white opacity-10"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="mb-1 text-dark text-sm">Happy users</h6>
+                      <span class="text-xs font-weight-bold">+ 430</span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <footer class="footer pt-3  ">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-lg-between">
+            <div class="col-lg-6 mb-lg-0 mb-4">
+              <div class="copyright text-center text-sm text-muted text-lg-start">
+                © <script>
+                  document.write(new Date().getFullYear())
+                </script>,
+                <!-- made with <i class="fa fa-heart"></i> by
+                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
+                for a better web. -->
+              </div>
+            </div>
+            <!-- <div class="col-lg-6">
+              <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                <li class="nav-item">
+                  <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">Creative Tim</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.creative-tim.com/blog" class="nav-link text-muted" target="_blank">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted" target="_blank">License</a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+
+  
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/chartjs.min.js"></script>
+  <script>
+    var ctx1 = document.getElementById("chart-line").getContext("2d");
+	var ctx2 = document.getElementById("chart-line1").getContext("2d");
+
+    var gradientStroke1 = ctx1.createLinearGradient(0, 230, 0, 50);
+	var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke1.addColorStop(1, 'rgba(94, 114, 228, 0.2)');
+    gradientStroke1.addColorStop(0.2, 'rgba(94, 114, 228, 0.0)');
+    gradientStroke1.addColorStop(0, 'rgba(94, 114, 228, 0)');
+
+	gradientStroke2.addColorStop(1, 'rgba(190, 37, 37, 0.2)');
+    gradientStroke2.addColorStop(0.2, 'rgba(190, 37, 37, 0.0)');
+    gradientStroke2.addColorStop(0, 'rgba(190, 37, 37, 0)');
+
+    new Chart(ctx1, {
+      type: "line",
+      data: {
+        labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        datasets: [{
+          label: "Value",
+          tension: 0.4,
+          borderWidth: 0,
+          pointRadius: 0,
+          borderColor: "#5e72e4",
+          backgroundColor: gradientStroke1,
+          borderWidth: 3,
+          fill: true,
+          data: [22737571, 22749571, 22743571, 22745571, 22747571, 22757571, 22747571, 22737571, 22747571],
+          maxBarThickness: 6
+
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          }
+        },
+        interaction: {
+          intersect: false,
+          mode: 'index',
+        },
+        scales: {
+          y: {
+            grid: {
+              drawBorder: true,
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: true,
+              borderDash: [5, 5]
+            },
+            ticks: {
+              display: true,
+              padding: 10,
+              color: '#fbfbfb',
+              font: {
+                size: 11,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+            }
+          },
+          x: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false,
+              borderDash: [5, 5]
+            },
+            ticks: {
+              display: true,
+              color: '#ccc',
+              padding: 20,
+              font: {
+                size: 11,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+            }
+          },
+		  y: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false,
+              borderDash: [5, 5]
+            },
+            ticks: {
+              display: true,
+              color: '#ccc',
+              padding: 20,
+              font: {
+                size: 11,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+            }
+          },
+        },
+      },
+    });
+
+	new Chart(ctx2, {
+      type: "line",
+      data: {
+        labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        datasets: [{
+          label: "",
+          tension: 0.4,
+          borderWidth: 0,
+          pointRadius: 0,
+          borderColor: "#e45e5e",
+          backgroundColor: gradientStroke2,
+          borderWidth: 3,
+          fill: true,
+          data: [2496291, 2496391, 2496491, 2496491, 2496391, 2496291, 2496391, 2496561, 2496591],
+          maxBarThickness: 6
+
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          }
+        },
+        interaction: {
+          intersect: false,
+          mode: 'index',
+        },
+        scales: {
+          y: {
+            grid: {
+              drawBorder: false,
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+              borderDash: [5, 5]
+            },
+            ticks: {
+              display: true,
+              padding: 10,
+              color: '#fbfbfb',
+              font: {
+                size: 11,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+            }
+          },
+          x: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false,
+              borderDash: [5, 5]
+            },
+            ticks: {
+              display: true,
+              color: '#ccc',
+              padding: 20,
+              font: {
+                size: 11,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+            }
+          },
+		  y: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false,
+              borderDash: [5, 5]
+            },
+            ticks: {
+              display: true,
+              color: '#ccc',
+              padding: 20,
+              font: {
+                size: 11,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+            }
+          },
+        },
+      },
+    });
+
+  </script>
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+</body>
+
+</html>
