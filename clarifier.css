@@ -1,0 +1,174 @@
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn-manual {
+    border: 10px !important;
+    /* background-color: red; */
+    color: white;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    --active: #0328ff !important;
+    --active-inner: #0328ff !important;
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: #275EFE;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+}
+
+.btn {
+    --bs-btn-padding-x: 1.25rem;
+    --bs-btn-padding-y: 0.625rem;
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-font-weight: 700;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: white;
+    --bs-btn-border-width: 1px;
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: 0.5rem;
+    --bs-btn-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: none !important;
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    transition: all 0.15s ease-in;
+}
+
+.form-counting {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #ffffff;
+    background-color: #c2c2c2;
+    background-clip: padding-box;
+    border: 1px solid #c2c2c2;
+    appearance: none;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.form-counting::placeholder {
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.form-status {
+    display: block;
+    border-radius: 10px;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #636262;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-left-color: #636262;
+    border-right-color: #636262;
+    appearance: none;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.status-container {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.status-label {
+    margin-right: 1px;
+}
+
+.footer {
+    text-align: right !important;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+.form-datasensor {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: 50%;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #000000;
+    background-color: #b3ff009c;
+    background-clip: padding-box;
+    border: 1px solid #ffffff00;
+    border-radius: 5px;
+    appearance: none;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.form-datasensor::placeholder {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #007bff, #8a2be2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.form-interval {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d2d6da;
+    appearance: none;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.form-interval::placeholder {
+    color: #495057;
+}
+
+.datasensor-bg {
+    background-color: #b6cdd46b;
+}

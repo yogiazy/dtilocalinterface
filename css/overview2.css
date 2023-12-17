@@ -1,0 +1,64 @@
+.gradient-text {
+    background: linear-gradient(135deg, #007bff, #8a2be2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.container-bg {
+    background-color: rgba(255, 255, 255, 0.438);
+}
+
+.coba {
+    background: rgba(0, 128, 0, 0);
+    width: 12vw !important;
+    height: 10vh;
+    position: absolute;
+    top: 30%;
+    left: 2.5%;
+}
+
+.coba1 {
+    background: rgba(0, 128, 0, 0);
+    width: 12vw !important;
+    height: 15vh;
+    position: absolute;
+    top: 26%;
+    left: 20%;
+}
+
+.coba2 {
+    background: rgba(0, 128, 0, 0);
+    width: 11vw;
+    height: 10vh;
+    position: absolute;
+    top: 54%;
+    left: 70%;
+}
+
+.coba3 {
+    background: rgba(0, 128, 0, 0);
+    width: 12vw;
+    height: 10vh;
+    position: absolute;
+    top: 3%;
+    left: 83%;
+}
+
+.coba4 {
+    background: rgba(0, 128, 0, 0);
+    width: 32vw;
+    height: 15vh;
+    position: absolute;
+    top: 68%;
+    left: 1%;
+}
+
+.coba5 {
+    background: rgba(0, 128, 0, 0);
+    width: 12vw;
+    height: 15vh;
+    position: absolute;
+    top: 59%;
+    left: 45%;
+}

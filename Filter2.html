@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+  <link id="pagestyle" href="./assets/css/argon-dashboard.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet">
+  <link href="Filter2.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+  <title> Water Treatment Plant - Drupadi Tirta Intan</title>
+</head>
+
+<body class="g-sidenav-show   bg-gray-100">
+  <div class="min-height-300 bg-primary position-absolute top-0 w-100 h-50"></div>
+  <aside
+    class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
+    id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+        aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0" href="  " target="_blank">
+        <img src="./assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
+        <span class="ms-1 font-weight-bold">WTP Drupadi Tirta Intan </span>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " href="./index.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-1 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1 text-sm">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./Overview2.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Overview</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./Dosing2.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Dosing</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./Clarifier2.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Clarifier</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./Filter2.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Filter</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./Reservoir2.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Reservoir & Distribution</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./tables.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Tables</span>
+          </a>
+        </li>
+        <li class="nav-item mt-3">
+    </div>
+  </aside>
+  <main class="main-content position-relative border-radius-lg ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur"
+      data-scroll="false">
+      <div class="container-fluid py-1 px-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
+            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Filter</li>
+          </ol>
+          <h6 class="font-weight-bolder text-white mb-0">Filter</h6>
+        </nav>
+
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="container-fluid py-2">
+      <div class="container-fluid py-2">
+        <div class="row">
+          <div class="col-lg-12 mb-lg-0 mb-4" style="width:80vw">
+            <div class="card z-index-2 h-100">
+              <div class="card-header pb-4 pt-4 bg-transparent">
+
+
+                <div id="filterparent" style="margin-right: -3.6rem;">
+                  <img class="imgfilter" src="/Filterfix-rev.png" style="width: 76vw;">
+
+                  <!-- FILTER 1 -->
+                  <div class="filter1" style="position: absolute; top: 27.5rem; z-index: 1;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <table style="width: 100%;">
+                                  <tr>
+                                    <td class="text-sm mb-2 text-uppercase font-weight-bold text-align-left">Filter 1
+                                    </td>
+                                    <td class="col-2 m-2 p-2">
+                                      <input id="FI1_count" type="number" class="form-counting text-center" readonly>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI1_auto" checked
+                                      onchange="toggleMode('A', this.id, 'FI1_manual', '1')">
+                                  <td style="font-size: 14px; padding-right: 1.5rem;">Auto</td>
+                                  </td>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI1_manual"
+                                      onchange="toggleMode('B', this.id, 'FI1_auto', '1')">
+                                  <td style="font-size: 14px; padding-right: 0.7rem;">Manual</td>
+                                  </td>
+                                </table>
+                                <div id="AutoF1" class="row mt-1" style="text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="mb-2" style="font-size: 14px;">Blower</td>
+                                      <td class="mb-2" style="font-size: 14px;">Backwash</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input id="FI1_BLO_input" type="number"
+                                          class="form-control text-center input-drs" placeholder="sec">
+                                      </td>
+                                      <td>
+                                        <input id="FI1_BWS_input" type="number"
+                                          class="form-control text-center input-drs" style="margin-left: 0.2rem;"
+                                          placeholder="sec">
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table class="mb-2" style="width: 100%; margin-left: -0.3rem;">
+                                    <tr>
+                                      <td class="status-container">Status: </td>
+                                    </tr>
+                                    <tr>
+                                      <td><input id="FI1_status" type="number" class="form-status text-center" readonly>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnCheck(this.id)" id="FI1_check" type="button"
+                                          class="btn btn-xsm btn-warning mb-2"
+                                          style="font-size: 10px; padding-left: 0.78rem; padding-right: 0.78rem;">Check</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnSubmit(this.id)" id="FI1_submit" type="button"
+                                          class="btn btn-xsm btn-primary mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Submit</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnStop(this.id)" id="FI1_stop" type="button"
+                                          class="btn btn-xsm btn-danger mb-0"
+                                          style="font-size: 10px; padding-left: 1rem; padding-right: 1rem;">Stop</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnRun(this.id)" id="FI1_run" type="button"
+                                          class="btn btn-xsm btn-success mb-0"
+                                          style="font-size: 10px; padding-left: 1.12rem; padding-right: 1.12rem;">Run</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <div id="ManualF1" class="row mt-2"
+                                  style="display: none; text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnInlet(this.id)" id="FI1_INL" type="button"
+                                          class="btn btn-manual mb-2" style="font-size: 10px;">Inlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnDrain(this.id)" id="FI1_DRA" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.8rem; padding-right: 0.8rem;">Drain</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnOutlet(this.id)" id="FI1_OTL" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.75rem; padding-right: 0.75rem;">Outlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnBlower(this.id)" id="FI1_BLO" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Blower</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnBackwash(this.id)" id="FI1_BWS" type="button"
+                                          class="btn btn-manual mb-0"
+                                          style="font-size: 10px; padding-left: 0.7rem; padding-right: 0.7rem;">Backwash</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FILTER 2 -->
+                  <div class="filter2" style="position: absolute; top: 27.5rem; z-index: 1;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <table style="width: 100%;">
+                                  <tr>
+                                    <td class="text-sm mb-2 text-uppercase font-weight-bold text-align-left">Filter 2
+                                    </td>
+                                    <td class="col-2 m-2 p-2">
+                                      <input id="FI2_count" type="number" class="form-counting text-center" readonly>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI2_auto" checked
+                                      onchange="toggleMode('A', this.id, 'FI2_manual', '2')">
+                                  <td style="font-size: 14px; padding-right: 1.5rem;">Auto</td>
+                                  </td>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI2_manual"
+                                      onchange="toggleMode('B', this.id, 'FI2_auto', '2')">
+                                  <td style="font-size: 14px; padding-right: 0.7rem;">Manual</td>
+                                  </td>
+                                </table>
+                                <div id="AutoF2" class="row mt-1" style="text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="mb-2" style="font-size: 14px;">Blower</td>
+                                      <td class="mb-2" style="font-size: 14px;">Backwash</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input id="FI2_BLO_input" type="number"
+                                          class="form-control text-center input-drs" placeholder="sec">
+                                      </td>
+                                      <td>
+                                        <input id="FI2_BWS_input" type="number"
+                                          class="form-control text-center input-drs" style="margin-left: 0.2rem;"
+                                          placeholder="sec">
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table class="mb-2" style="width: 100%; margin-left: -0.3rem;">
+                                    <tr>
+                                      <td class="status-container">Status: </td>
+                                    </tr>
+                                    <tr>
+                                      <td><input id="FI2_status" type="number" class="form-status text-center" readonly>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnCheck(this.id)" id="FI2_check" type="button"
+                                          class="btn btn-xsm btn-warning mb-2"
+                                          style="font-size: 10px; padding-left: 0.78rem; padding-right: 0.78rem;">Check</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnSubmit(this.id)" id="FI2_submit" type="button"
+                                          class="btn btn-xsm btn-primary mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Submit</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnStop(this.id)" id="FI2_stop" type="button"
+                                          class="btn btn-xsm btn-danger mb-0"
+                                          style="font-size: 10px; padding-left: 1rem; padding-right: 1rem;">Stop</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnRun(this.id)" id="FI2_run" type="button"
+                                          class="btn btn-xsm btn-success mb-0"
+                                          style="font-size: 10px; padding-left: 1.12rem; padding-right: 1.12rem;">Run</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <div id="ManualF2" class="row mt-2"
+                                  style="display: none; text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnInlet(this.id)" id="FI2_INL" type="button"
+                                          class="btn btn-manual mb-2" style="font-size: 10px;">Inlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnDrain(this.id)" id="FI2_DRA" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.8rem; padding-right: 0.8rem;">Drain</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnOutlet(this.id)" id="FI2_OTL" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.75rem; padding-right: 0.75rem;">Outlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnBlower(this.id)" id="FI2_BLO" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Blower</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnBackwash(this.id)" id="FI2_BWS" type="button"
+                                          class="btn btn-manual mb-0"
+                                          style="font-size: 10px; padding-left: 0.7rem; padding-right: 0.7rem;">Backwash</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FILTER 3 -->
+                  <div class="filter3" style="position: absolute; top: 27.5rem; z-index: 1;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <table style="width: 100%;">
+                                  <tr>
+                                    <td class="text-sm mb-2 text-uppercase font-weight-bold text-align-left">Filter 3
+                                    </td>
+                                    <td class="col-2 m-2 p-2">
+                                      <input id="FI3_count" type="number" class="form-counting text-center" readonly>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI3_auto" checked
+                                      onchange="toggleMode('A', this.id, 'FI3_manual', '3')">
+                                  <td style="font-size: 14px; padding-right: 1.5rem;">Auto</td>
+                                  </td>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI3_manual"
+                                      onchange="toggleMode('B', this.id, 'FI3_auto', '3')">
+                                  <td style="font-size: 14px; padding-right: 0.7rem;">Manual</td>
+                                  </td>
+                                </table>
+                                <div id="AutoF3" class="row mt-1" style="text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="mb-2" style="font-size: 14px;">Blower</td>
+                                      <td class="mb-2" style="font-size: 14px;">Backwash</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input id="FI3_BLO_input" type="number"
+                                          class="form-control text-center input-drs" placeholder="sec">
+                                      </td>
+                                      <td>
+                                        <input id="FI3_BWS_input" type="number"
+                                          class="form-control text-center input-drs" style="margin-left: 0.2rem;"
+                                          placeholder="sec">
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table class="mb-2" style="width: 100%; margin-left: -0.3rem;">
+                                    <tr>
+                                      <td class="status-container">Status: </td>
+                                    </tr>
+                                    <tr>
+                                      <td><input id="FI3_status" type="number" class="form-status text-center" readonly>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnCheck(this.id)" id="FI3_check" type="button"
+                                          class="btn btn-xsm btn-warning mb-2"
+                                          style="font-size: 10px; padding-left: 0.78rem; padding-right: 0.78rem;">Check</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnSubmit(this.id)" id="FI3_submit" type="button"
+                                          class="btn btn-xsm btn-primary mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Submit</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnStop(this.id)" id="FI3_stop" type="button"
+                                          class="btn btn-xsm btn-danger mb-0"
+                                          style="font-size: 10px; padding-left: 1rem; padding-right: 1rem;">Stop</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnRun(this.id)" id="FI3_run" type="button"
+                                          class="btn btn-xsm btn-success mb-0"
+                                          style="font-size: 10px; padding-left: 1.12rem; padding-right: 1.12rem;">Run</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <div id="ManualF3" class="row mt-2"
+                                  style="display: none; text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnInlet(this.id)" id="FI3_INL" type="button"
+                                          class="btn btn-manual mb-2" style="font-size: 10px;">Inlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnDrain(this.id)" id="FI3_DRA" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.8rem; padding-right: 0.8rem;">Drain</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnOutlet(this.id)" id="FI3_OTL" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.75rem; padding-right: 0.75rem;">Outlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnBlower(this.id)" id="FI3_BLO" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Blower</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnBackwash(this.id)" id="FI3_BWS" type="button"
+                                          class="btn btn-manual mb-0"
+                                          style="font-size: 10px; padding-left: 0.7rem; padding-right: 0.7rem;">Backwash</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FILTER 4 -->
+                  <div class="filter4" style="position: absolute; top: 27.5rem; z-index: 1;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <table style="width: 100%;">
+                                  <tr>
+                                    <td class="text-sm mb-2 text-uppercase font-weight-bold text-align-left">Filter 4
+                                    </td>
+                                    <td class="col-2 m-2 p-2">
+                                      <input id="FI4_count" type="number" class="form-counting text-center" readonly>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI4_auto" checked
+                                      onchange="toggleMode('A', this.id, 'FI4_manual', '4')">
+                                  <td style="font-size: 14px; padding-right: 1.5rem;">Auto</td>
+                                  </td>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI4_manual"
+                                      onchange="toggleMode('B', this.id, 'FI4_auto', '4')">
+                                  <td style="font-size: 14px; padding-right: 0.7rem;">Manual</td>
+                                  </td>
+                                </table>
+                                <div id="AutoF4" class="row mt-1" style="text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="mb-2" style="font-size: 14px;">Blower</td>
+                                      <td class="mb-2" style="font-size: 14px;">Backwash</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input id="FI4_BLO_input" type="number"
+                                          class="form-control text-center input-drs" placeholder="sec">
+                                      </td>
+                                      <td>
+                                        <input id="FI4_BWS_input" type="number"
+                                          class="form-control text-center input-drs" style="margin-left: 0.2rem;"
+                                          placeholder="sec">
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table class="mb-2" style="width: 100%; margin-left: -0.3rem;">
+                                    <tr>
+                                      <td class="status-container">Status: </td>
+                                    </tr>
+                                    <tr>
+                                      <td><input id="FI4_status" type="number" class="form-status text-center" readonly>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnCheck(this.id)" id="FI4_check" type="button"
+                                          class="btn btn-xsm btn-warning mb-2"
+                                          style="font-size: 10px; padding-left: 0.78rem; padding-right: 0.78rem;">Check</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnSubmit(this.id)" id="FI4_submit" type="button"
+                                          class="btn btn-xsm btn-primary mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Submit</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnStop(this.id)" id="FI4_stop" type="button"
+                                          class="btn btn-xsm btn-danger mb-0"
+                                          style="font-size: 10px; padding-left: 1rem; padding-right: 1rem;">Stop</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnRun(this.id)" id="FI4_run" type="button"
+                                          class="btn btn-xsm btn-success mb-0"
+                                          style="font-size: 10px; padding-left: 1.12rem; padding-right: 1.12rem;">Run</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <div id="ManualF4" class="row mt-2"
+                                  style="display: none; text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnInlet(this.id)" id="FI4_INL" type="button"
+                                          class="btn btn-manual mb-2" style="font-size: 10px;">Inlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnDrain(this.id)" id="FI4_DRA" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.8rem; padding-right: 0.8rem;">Drain</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnOutlet(this.id)" id="FI4_OTL" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.75rem; padding-right: 0.75rem;">Outlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnBlower(this.id)" id="FI4_BLO" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Blower</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnBackwash(this.id)" id="FI4_BWS" type="button"
+                                          class="btn btn-manual mb-0"
+                                          style="font-size: 10px; padding-left: 0.7rem; padding-right: 0.7rem;">Backwash</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FILTER 5 -->
+                  <div class="filter5" style="position: absolute; top: 27.5rem; z-index: 1;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <table style="width: 100%;">
+                                  <tr>
+                                    <td class="text-sm mb-2 text-uppercase font-weight-bold text-align-left">Filter 5
+                                    </td>
+                                    <td class="col-2 m-2 p-2">
+                                      <input id="FI5_count" type="number" class="form-counting text-center" readonly>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI5_auto" checked
+                                      onchange="toggleMode('A', this.id, 'FI5_manual', '5')">
+                                  <td style="font-size: 14px; padding-right: 1.5rem;">Auto</td>
+                                  </td>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI5_manual"
+                                      onchange="toggleMode('B', this.id, 'FI5_auto', '5')">
+                                  <td style="font-size: 14px; padding-right: 0.7rem;">Manual</td>
+                                  </td>
+                                </table>
+                                <div id="AutoF5" class="row mt-1" style="text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="mb-2" style="font-size: 14px;">Blower</td>
+                                      <td class="mb-2" style="font-size: 14px;">Backwash</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input id="FI5_BLO_input" type="number"
+                                          class="form-control text-center input-drs" placeholder="sec">
+                                      </td>
+                                      <td>
+                                        <input id="FI5_BWS_input" type="number"
+                                          class="form-control text-center input-drs" style="margin-left: 0.2rem;"
+                                          placeholder="sec">
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table class="mb-2" style="width: 100%; margin-left: -0.3rem;">
+                                    <tr>
+                                      <td class="status-container">Status: </td>
+                                    </tr>
+                                    <tr>
+                                      <td><input id="FI5_status" type="number" class="form-status text-center" readonly>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnCheck(this.id)" id="FI5_check" type="button"
+                                          class="btn btn-xsm btn-warning mb-2"
+                                          style="font-size: 10px; padding-left: 0.78rem; padding-right: 0.78rem;">Check</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnSubmit(this.id)" id="FI5_submit" type="button"
+                                          class="btn btn-xsm btn-primary mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Submit</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnStop(this.id)" id="FI5_stop" type="button"
+                                          class="btn btn-xsm btn-danger mb-0"
+                                          style="font-size: 10px; padding-left: 1rem; padding-right: 1rem;">Stop</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnRun(this.id)" id="FI5_run" type="button"
+                                          class="btn btn-xsm btn-success mb-0"
+                                          style="font-size: 10px; padding-left: 1.12rem; padding-right: 1.12rem;">Run</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <div id="ManualF5" class="row mt-2"
+                                  style="display: none; text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnInlet(this.id)" id="FI5_INL" type="button"
+                                          class="btn btn-manual mb-2" style="font-size: 10px;">Inlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnDrain(this.id)" id="FI5_DRA" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.8rem; padding-right: 0.8rem;">Drain</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnOutlet(this.id)" id="FI5_OTL" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.75rem; padding-right: 0.75rem;">Outlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnBlower(this.id)" id="FI5_BLO" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Blower</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnBackwash(this.id)" id="FI5_BWS" type="button"
+                                          class="btn btn-manual mb-0"
+                                          style="font-size: 10px; padding-left: 0.7rem; padding-right: 0.7rem;">Backwash</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FILTER 6 -->
+                  <div class="filter6" style="position: absolute; top: 27.5rem; z-index: 1;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <table style="width: 100%;">
+                                  <tr>
+                                    <td class="text-sm mb-2 text-uppercase font-weight-bold text-align-left">Filter 6
+                                    </td>
+                                    <td class="col-2 m-2 p-2">
+                                      <input id="FI6_count" type="number" class="form-counting text-center" readonly>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI6_auto" checked
+                                      onchange="toggleMode('A', this.id, 'FI6_manual', '6')">
+                                  <td style="font-size: 14px; padding-right: 1.5rem;">Auto</td>
+                                  </td>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI6_manual"
+                                      onchange="toggleMode('B', this.id, 'FI6_auto', '6')">
+                                  <td style="font-size: 14px; padding-right: 0.7rem;">Manual</td>
+                                  </td>
+                                </table>
+                                <div id="AutoF6" class="row mt-1" style="text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="mb-2" style="font-size: 14px;">Blower</td>
+                                      <td class="mb-2" style="font-size: 14px;">Backwash</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input id="FI6_BLO_input" type="number"
+                                          class="form-control text-center input-drs" placeholder="sec">
+                                      </td>
+                                      <td>
+                                        <input id="FI6_BWS_input" type="number"
+                                          class="form-control text-center input-drs" style="margin-left: 0.2rem;"
+                                          placeholder="sec">
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table class="mb-2" style="width: 100%; margin-left: -0.3rem;">
+                                    <tr>
+                                      <td class="status-container">Status: </td>
+                                    </tr>
+                                    <tr>
+                                      <td><input id="FI6_status" type="number" class="form-status text-center" readonly>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnCheck(this.id)" id="FI6_check" type="button"
+                                          class="btn btn-xsm btn-warning mb-2"
+                                          style="font-size: 10px; padding-left: 0.78rem; padding-right: 0.78rem;">Check</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnSubmit(this.id)" id="FI6_submit" type="button"
+                                          class="btn btn-xsm btn-primary mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Submit</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnStop(this.id)" id="FI6_stop" type="button"
+                                          class="btn btn-xsm btn-danger mb-0"
+                                          style="font-size: 10px; padding-left: 1rem; padding-right: 1rem;">Stop</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnRun(this.id)" id="FI6_run" type="button"
+                                          class="btn btn-xsm btn-success mb-0"
+                                          style="font-size: 10px; padding-left: 1.12rem; padding-right: 1.12rem;">Run</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <div id="ManualF6" class="row mt-2"
+                                  style="display: none; text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnInlet(this.id)" id="FI6_INL" type="button"
+                                          class="btn btn-manual mb-2" style="font-size: 10px;">Inlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnDrain(this.id)" id="FI6_DRA" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.8rem; padding-right: 0.8rem;">Drain</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnOutlet(this.id)" id="FI6_OTL" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.75rem; padding-right: 0.75rem;">Outlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnBlower(this.id)" id="FI6_BLO" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Blower</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnBackwash(this.id)" id="FI6_BWS" type="button"
+                                          class="btn btn-manual mb-0"
+                                          style="font-size: 10px; padding-left: 0.7rem; padding-right: 0.7rem;">Backwash</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FILTER 7 -->
+                  <div class="filter7" style="position: absolute; top: 27.5rem; z-index: 1;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <table style="width: 100%;">
+                                  <tr>
+                                    <td class="text-sm mb-2 text-uppercase font-weight-bold text-align-left">Filter 7
+                                    </td>
+                                    <td class="col-2 m-2 p-2">
+                                      <input id="FI7_count" type="number" class="form-counting text-center" readonly>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI7_auto" checked
+                                      onchange="toggleMode('A', this.id, 'FI7_manual', '7')">
+                                  <td style="font-size: 14px; padding-right: 1.5rem;">Auto</td>
+                                  </td>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI7_manual"
+                                      onchange="toggleMode('B', this.id, 'FI7_auto', '7')">
+                                  <td style="font-size: 14px; padding-right: 0.7rem;">Manual</td>
+                                  </td>
+                                </table>
+                                <div id="AutoF7" class="row mt-1" style="text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="mb-2" style="font-size: 14px;">Blower</td>
+                                      <td class="mb-2" style="font-size: 14px;">Backwash</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input id="FI7_BLO_input" type="number"
+                                          class="form-control text-center input-drs" placeholder="sec">
+                                      </td>
+                                      <td>
+                                        <input id="FI7_BWS_input" type="number"
+                                          class="form-control text-center input-drs" style="margin-left: 0.2rem;"
+                                          placeholder="sec">
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table class="mb-2" style="width: 100%; margin-left: -0.3rem;">
+                                    <tr>
+                                      <td class="status-container">Status: </td>
+                                    </tr>
+                                    <tr>
+                                      <td><input id="FI7_status" type="number" class="form-status text-center" readonly>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnCheck(this.id)" id="FI7_check" type="button"
+                                          class="btn btn-xsm btn-warning mb-2"
+                                          style="font-size: 10px; padding-left: 0.78rem; padding-right: 0.78rem;">Check</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnSubmit(this.id)" id="FI7_submit" type="button"
+                                          class="btn btn-xsm btn-primary mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Submit</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnStop(this.id)" id="FI7_stop" type="button"
+                                          class="btn btn-xsm btn-danger mb-0"
+                                          style="font-size: 10px; padding-left: 1rem; padding-right: 1rem;">Stop</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnRun(this.id)" id="FI7_run" type="button"
+                                          class="btn btn-xsm btn-success mb-0"
+                                          style="font-size: 10px; padding-left: 1.12rem; padding-right: 1.12rem;">Run</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <div id="ManualF7" class="row mt-2"
+                                  style="display: none; text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnInlet(this.id)" id="FI7_INL" type="button"
+                                          class="btn btn-manual mb-2" style="font-size: 10px;">Inlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnDrain(this.id)" id="FI7_DRA" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.8rem; padding-right: 0.8rem;">Drain</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnOutlet(this.id)" id="FI7_OTL" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.75rem; padding-right: 0.75rem;">Outlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnBlower(this.id)" id="FI7_BLO" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Blower</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnBackwash(this.id)" id="FI7_BWS" type="button"
+                                          class="btn btn-manual mb-0"
+                                          style="font-size: 10px; padding-left: 0.7rem; padding-right: 0.7rem;">Backwash</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FILTER 8 -->
+                  <div class="filter8" style="position: absolute; top: 27.5rem; z-index: 1;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <table style="width: 100%;">
+                                  <tr>
+                                    <td class="text-sm mb-2 text-uppercase font-weight-bold text-align-left">Filter 8
+                                    </td>
+                                    <td class="col-2 m-2 p-2">
+                                      <input id="FI8_count" type="number" class="form-counting text-center" readonly>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI8_auto" checked
+                                      onchange="toggleMode('A', this.id, 'FI8_manual', '8')">
+                                  <td style="font-size: 14px; padding-right: 1.5rem;">Auto</td>
+                                  </td>
+                                </table>
+                                <table style="width: 100%;">
+                                  <td style="text-align: left;">
+                                    <input type="radio" class="radio" id="FI8_manual"
+                                      onchange="toggleMode('B', this.id, 'FI8_auto', '8')">
+                                  <td style="font-size: 14px; padding-right: 0.7rem;">Manual</td>
+                                  </td>
+                                </table>
+                                <div id="AutoF8" class="row mt-1" style="text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="mb-2" style="font-size: 14px;">Blower</td>
+                                      <td class="mb-2" style="font-size: 14px;">Backwash</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input id="FI8_BLO_input" type="number"
+                                          class="form-control text-center input-drs" placeholder="sec">
+                                      </td>
+                                      <td>
+                                        <input id="FI8_BWS_input" type="number"
+                                          class="form-control text-center input-drs" style="margin-left: 0.2rem;"
+                                          placeholder="sec">
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table class="mb-2" style="width: 100%; margin-left: -0.3rem;">
+                                    <tr>
+                                      <td class="status-container">Status: </td>
+                                    </tr>
+                                    <tr>
+                                      <td><input id="FI8_status" type="number" class="form-status text-center" readonly>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnCheck(this.id)" id="FI8_check" type="button"
+                                          class="btn btn-xsm btn-warning mb-2"
+                                          style="font-size: 10px; padding-left: 0.78rem; padding-right: 0.78rem;">Check</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnSubmit(this.id)" id="FI8_submit" type="button"
+                                          class="btn btn-xsm btn-primary mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Submit</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnStop(this.id)" id="FI8_stop" type="button"
+                                          class="btn btn-xsm btn-danger mb-0"
+                                          style="font-size: 10px; padding-left: 1rem; padding-right: 1rem;">Stop</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnRun(this.id)" id="FI8_run" type="button"
+                                          class="btn btn-xsm btn-success mb-0"
+                                          style="font-size: 10px; padding-left: 1.12rem; padding-right: 1.12rem;">Run</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <div id="ManualF8" class="row mt-2"
+                                  style="display: none; text-align: left; margin-left: 0.1rem;">
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnInlet(this.id)" id="FI8_INL" type="button"
+                                          class="btn btn-manual mb-2" style="font-size: 10px;">Inlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnDrain(this.id)" id="FI8_DRA" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.8rem; padding-right: 0.8rem;">Drain</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnOutlet(this.id)" id="FI8_OTL" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.75rem; padding-right: 0.75rem;">Outlet</button>
+                                      </td>
+                                      <td class="col-4 m-2 p-0">
+                                        <button onclick="btnBlower(this.id)" id="FI8_BLO" type="button"
+                                          class="btn btn-manual mb-2"
+                                          style="font-size: 10px; padding-left: 0.65rem; padding-right: 0.65rem;">Blower</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table style="width: 100%;">
+                                    <tr>
+                                      <td class="col-2 m-2 p-0">
+                                        <button onclick="btnBackwash(this.id)" id="FI8_BWS" type="button"
+                                          class="btn btn-manual mb-0"
+                                          style="font-size: 10px; padding-left: 0.7rem; padding-right: 0.7rem;">Backwash</button>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="filter9" style="position: absolute; top: 48.25rem; z-index: 1;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card datasensor-bg">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <p class="text-sm mb-0 text-uppercase" style="color: rgb(24, 23, 23); font-weight: bolder;">Sedimentation Turbidity </p>
+                                <div class="row">
+                                  <div class="col-6">
+                                    <h5 class="font-weight-bolder" style="font-size:small;">
+                                      <table>
+                                        <tr>
+                                          <td>
+                                            <i class='bx bxs-analyse bx-spin bx-md gradient-text'></i>
+                                          </td>
+                                          <td>
+                                            <p class="font-weight-bold text-sm m-2 mt-1">Turbidity A
+                                              <input id="TBDSA" type="number" class="form-datasensor text-center"
+                                                readonly>
+                                            </p>
+                                          </td>
+                                          <td>
+                                            <div style="margin-left: -4rem; padding-top: 1rem;">NTU</div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </h5>
+                                  </div>
+                                  <div class="col-6">
+                                    <h5 class="font-weight-bolder" style="font-size:small;">
+                                      <table>
+                                        <tr>
+                                          <td>
+                                            <i class='bx bxs-analyse bx-spin bx-md gradient-text'></i>
+                                          </td>
+                                          <td>
+                                            <p class="font-weight-bold text-sm m-2 mt-1">Turbidity B
+                                              <input id="TBDSB" type="number" class="form-datasensor text-center"
+                                                readonly>
+                                            </p>
+                                          </td>
+                                          <td>
+                                            <div style="margin-left: -4rem; padding-top: 1rem;">NTU</div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </h5>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter10" style="position: absolute; top: 48.25rem; z-index: 1;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card datasensor-bg">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <p class="text-sm mb-0 text-uppercase" style="color: rgb(24, 23, 23); font-weight: bolder;">Product Water</p>
+                                <div class="row">
+                                  <div class="col-4">
+                                    <h5 class="font-weight-bolder" style="font-size:small;">
+                                      <table>
+                                        <tr>
+                                          <td>
+                                            <i class='bx bxs-analyse bx-spin bx-md gradient-text'></i>
+                                          </td>
+                                          <td>
+                                            <p class="font-weight-bold text-sm m-2 mt-1">Turbidity
+                                              <input id="tbdproduct" type="number" class="form-datasensor text-center"
+                                                readonly>
+                                            </p>
+                                          </td>
+                                          <td>
+                                            <div style="margin-left: -4rem; padding-top: 1rem;">NTU</div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </h5>
+                                  </div>
+                                  <div class="col-4" style="margin-top: -1.7rem;">
+                                    <table>
+                                      <tr>
+                                        <td>
+                                          Motor
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table class="control-pompa" style="width: 100%;">
+                                      <tr>
+                                        <td class="col-2 px-1">
+                                          <button onclick="btnMBLO(this.id)" id="FI8_INL" type="button"
+                                            class="btn btn-manual"
+                                            style="font-size: 10px; margin: auto;">Blower</button>
+                                        </td>
+                                        <td class="col-2 px-1">
+                                          <button onclick="btnMBLO(this.id)" id="FI8_INL" type="button"
+                                            class="btn btn-manual"
+                                            style="font-size: 10px; margin: auto;">Blower</button>
+                                        </td>
+                                    </table>
+                                  </div>
+                                  <div class="col-4" style="margin-top: -1.7rem;">
+                                    <table>
+                                      <tr>
+                                        <td>
+                                          Pompa
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table class="control-pompa" style="width: 100%;">
+                                      <tr>
+                                        <td class="col-2 px-1">
+                                          <button onclick="btnPBWS(this.id)" id="FI8_DRA" type="button"
+                                            class="btn btn-manual"
+                                            style="font-size: 10px; margin: auto; padding-left: 0.8rem; padding-right: 0.8rem;">Backwash</button>
+                                        </td>
+                                        <td class="col-2 px-1">
+                                          <button onclick="btnPBWS(this.id)" id="FI8_DRA" type="button"
+                                            class="btn btn-manual"
+                                            style="font-size: 10px; margin: auto; padding-left: 0.8rem; padding-right: 0.8rem;">Backwash</button>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter11" style="position: absolute; top: 12rem;">
+                    <div class="col-xl-12 mb-xl-0 mb-4 ">
+                      <div class="card" style="background-color: rgba(0, 0, 255, 0);">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <!-- <p class="text-sm mb-0 text-uppercase font-weight-bold">Level</p> -->
+                                <div class="row">
+                                  <div class="col-12">
+                                    <button id="FI1_high" type="button" class="btn btn-high mb-0"
+                                      style="font-size: 15px;" hidden>HIGH</button>
+                                  </div>
+                                  <div class="col-12">
+                                    <button id="FI1_low" type="button" class="btn btn-low mb-0"
+                                      style="font-size: 15px;" hidden>LOW</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter12" style="position: absolute; top: 12rem;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card" style="background-color: rgba(0, 0, 255, 0);">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <!-- <p class="text-sm mb-0 text-uppercase font-weight-bold">Level</p> -->
+                                <div class="row">
+                                  <div class="col-12">
+                                    <button id="FI2_high" type="button" class="btn btn-high mb-0"
+                                      style="font-size: 15px;" hidden>HIGH</button>
+                                  </div>
+                                  <div class="col-12">
+                                    <button id="FI2_low" type="button" class="btn btn-low mb-0"
+                                      style="font-size: 15px;" hidden>LOW</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter13" style="position: absolute; top: 12rem;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card" style="background-color: rgba(0, 0, 255, 0);">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <!-- <p class="text-sm mb-0 text-uppercase font-weight-bold">Level</p> -->
+                                <div class="row">
+                                  <div class="col-12">
+                                    <button id="FI3_high" type="button" class="btn btn-high mb-0"
+                                      style="font-size: 15px;" hidden>HIGH</button>
+                                  </div>
+                                  <div class="col-12">
+                                    <button id="FI3_low" type="button" class="btn btn-low mb-0"
+                                      style="font-size: 15px;" hidden>LOW</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter14" style="position: absolute; top: 12rem;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card" style="background-color: rgba(0, 0, 255, 0);">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <!-- <p class="text-sm mb-0 text-uppercase font-weight-bold">Level</p> -->
+                                <div class="row">
+                                  <div class="col-12">
+                                    <button id="FI4_high" type="button" class="btn btn-high mb-0"
+                                      style="font-size: 15px;" hidden>HIGH</button>
+                                  </div>
+                                  <div class="col-12">
+                                    <button id="FI4_low" type="button" class="btn btn-low mb-0"
+                                      style="font-size: 15px;" hidden>LOW</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter15" style="position: absolute; top: 12rem;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card" style="background-color: rgba(0, 0, 255, 0);">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <!-- <p class="text-sm mb-0 text-uppercase font-weight-bold">Level</p> -->
+                                <div class="row">
+                                  <div class="col-12">
+                                    <button id="FI5_high" type="button" class="btn btn-high mb-0"
+                                      style="font-size: 15px;" hidden>HIGH</button>
+                                  </div>
+                                  <div class="col-12">
+                                    <button id="FI5_low" type="button" class="btn btn-low mb-0"
+                                      style="font-size: 15px;" hidden>LOW</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter16" style="position: absolute; top: 12rem;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card" style="background-color: rgba(0, 0, 255, 0);">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <!-- <p class="text-sm mb-0 text-uppercase font-weight-bold">Level</p> -->
+                                <div class="row">
+                                  <div class="col-12">
+                                    <button id="FI6_high" type="button" class="btn btn-high mb-0"
+                                      style="font-size: 15px;" hidden>HIGH</button>
+                                  </div>
+                                  <div class="col-12">
+                                    <button id="FI6_low" type="button" class="btn btn-low mb-0"
+                                      style="font-size: 15px;" hidden>LOW</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter17" style="position: absolute; top: 12rem;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card" style="background-color: rgba(0, 0, 255, 0);">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <!-- <p class="text-sm mb-0 text-uppercase font-weight-bold">Level</p> -->
+                                <div class="row">
+                                  <div class="col-12">
+                                    <button id="FI7_high" type="button" class="btn btn-high mb-0"
+                                      style="font-size: 15px;" hidden>HIGH</button>
+                                  </div>
+                                  <div class="col-12">
+                                    <button id="FI7_low" type="button" class="btn btn-low mb-0"
+                                      style="font-size: 15px;" hidden>LOW</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter18" style="position: absolute; top: 12rem;">
+                    <div class="col-xl-12 mb-xl-0 mb-4">
+                      <div class="card" style="background-color: rgba(0, 0, 255, 0);">
+                        <div class="card-body p-3">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="numbers">
+                                <!-- <p class="text-sm mb-0 text-uppercase font-weight-bold">Level</p> -->
+                                <div class="row">
+                                  <div class="col-12">
+                                    <button id="FI8_high" type="button" class="btn btn-high mb-0"
+                                      style="font-size: 15px;" hidden>HIGH</button>
+                                  </div>
+                                  <div class="col-12">
+                                    <button id="FI8_low" type="button" class="btn btn-low mb-0"
+                                      style="font-size: 15px;" hidden>LOW</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <footer class="footer pt-3  ">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6 mb-lg-0 mb-4">
+            <div class="copyright text-center text-sm text-muted text-lg-start">
+              ©
+              <script>
+                document.write(new Date().getFullYear())
+              </script>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+    </div>
+  </main>
+
+
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/chartjs.min.js"></script>
+  <script src="./js/Filter2.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="./assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+
+</body>
+
+</html>

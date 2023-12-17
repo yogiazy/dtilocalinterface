@@ -1,0 +1,184 @@
+.btn {
+    --bs-btn-padding-x: 1rem !important;
+    /* --bs-btn-padding-y: 1rem !important; */
+    --bs-btn-focus-box-shadow: none !important;
+}
+
+.btn-manual {
+    border: 10px !important;
+    background-color: #5e72e4;
+    color: white;
+}
+
+.btn-high {
+    border: 10px !important;
+    background-color: #51ff00;
+    color: white;
+}
+
+.btn-low {
+    border: 10px !important;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    --active: #0328ff !important;
+    --active-inner: #0328ff !important;
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: #275EFE;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+}
+
+.input-drs {
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.form-control {
+    width: 3.4rem !important;
+    padding: 0.3rem !important;
+}
+
+.form-counting {
+    display: block;
+    width: 2.5rem;
+    margin-right: -0.8rem;
+    margin-top: -0.3rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #ffffff;
+    background-color: #c2c2c2;
+    background-clip: padding-box;
+    border: 1px solid #c2c2c2;
+    appearance: none;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.form-status {
+    display: block;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #636262;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-left-color: #636262;
+    border-right-color: #636262;
+    appearance: none;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.status-container {
+    padding-left: 0.3rem;
+    text-align: left;
+    font-size: 14px;
+}
+
+.status-label {
+    margin-right: 1px;
+}
+
+.btn-loading-icon {
+    color: #e1eee8;
+    font-size: 20px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    margin-top: -0.9rem;
+    margin-bottom: -0.8rem;
+}
+
+.btn-loading-stop {
+    color: #e1eee8;
+    font-size: 20px;
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+    margin-top: -0.9rem;
+    margin-bottom: -0.8rem;
+}
+
+.btn-loading-run {
+    color: #e1eee8;
+    font-size: 20px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: -0.9rem;
+    margin-bottom: -0.8rem;
+}
+
+.btn-loading-valve {
+    color: #e1eee8;
+    font-size: 20px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    margin-top: -0.9rem;
+    margin-bottom: -0.8rem;
+}
+
+
+.gradient-text {
+    background: linear-gradient(135deg, #007bff, #8a2be2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.control-pompa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #494949 solid;
+    border-width: 2px;
+    border-radius: 15px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.form-datasensor {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: 50%;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #000000;
+    background-color: #b3ff009c;
+    background-clip: padding-box;
+    border: 1px solid #ffffff00;
+    border-radius: 5px;
+    appearance: none;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.form-datasensor::placeholder {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.datasensor-bg {
+    background-color: #b6cdd46b;
+    margin-right: -1.2rem;
+}

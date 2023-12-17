@@ -126,18 +126,7 @@
   <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur"
-      data-scroll="false">
-      <!-- <div class="container-fluid py-1 px-3">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Dashboard</li>
-          </ol>
-          <h6 class="font-weight-bolder text-white mb-0">Dashboard</h6>
-        </nav>
-
-      </div> -->
-    </nav>
+      data-scroll="false"></nav>
     <!-- End Navbar -->
     <div class="container-fluid py-4">
       <div class="row">
@@ -319,25 +308,7 @@
             <model-viewer src="WTP-DTI2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-control disable-zoom
               poster="poster.webp" shadow-intensity="0" exposure="1.5" camera-orbit="50.69deg 70.59deg 88.51m"
               field-of-view="20.11deg" shadow-softness="0">
-              <!-- camera-controls -->
-              <!-- <button class="Hotspot" slot="hotspot-1" data-surface="0 0 22 20 23 0.461 0.408 0.131" data-visibility-attribute="visible">
-					<div class="HotspotAnnotation">RESERVOIR</div>
-				</button><button class="Hotspot" slot="hotspot-2" data-surface="28 0 44 47 52 0.008 0.714 0.278" data-visibility-attribute="visible">
-					<div class="HotspotAnnotation">DISTRIBUTION</div>
-				</button><button class="Hotspot" slot="hotspot-4" data-surface="1 0 125 124 123 0.148 0.310 0.542" data-visibility-attribute="visible">
-					<div class="HotspotAnnotation">FILTER</div>
-				</button><button class="Hotspot" slot="hotspot-7" data-surface="29 0 44 52 49 0.802 0.059 0.139" data-visibility-attribute="visible">
-					<div class="HotspotAnnotation">RAW WATER / RIVER</div>
-				</button> -->
-              <!-- <div class="progress-bar hide" slot="progress-bar">
-					<div class="update-bar"></div>
-				</div>
-				<button slot="ar-button" id="ar-button">
-					View in your space
-				</button>
-				<div id="ar-prompt">
-					<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-				</div> -->
+
             </model-viewer>
             </model-viewer>
             <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
@@ -504,7 +475,7 @@
                             <div class="text-center">
                               <p class="text-xs font-weight-bold mb-0">Turbidity A:</p>
                               <h6 class="text-sm mb-0">
-                                <div id="phraw"></div> 2.0 NTU
+                                <div id="tbds1"></div>
                               </h6>
                             </div>
                           </td>
@@ -531,7 +502,7 @@
                             <div class="text-center">
                               <p class="text-xs font-weight-bold mb-0">Turbidity B:</p>
                               <h6 class="text-sm mb-0">
-                                <div id="phraw"></div> 2.0 NTU
+                                <div id="tbds2"></div>
                               </h6>
                             </div>
                           </td>
@@ -579,7 +550,7 @@
                 <div id="gaugeCharta"></div>
                 <script>
                   // Create the gauge chart
-                  var chart = new JustGage({
+                  var chartreservoir = new JustGage({
                     id: "gaugeCharta",
                     value: 150, // INSERT VALUE LEVEL RESERVOIR HERE
                     min: 0,
@@ -666,7 +637,7 @@
                   <div id="gaugeChartab"></div>
                   <script>
                     // Create the gauge chart
-                    var chart = new JustGage({
+                    var chartfm1 = new JustGage({
                       id: "gaugeChartab",
                       value: 220, // INSERT VALUE PRODUCT WATER 1 HERE
                       min: 0,
@@ -706,7 +677,7 @@
                             <div class="text-center">
                               <p class="text-xs font-weight-bold mb-0">Flowmeter 1:</p>
                               <h6 class="text-sm mb-0">
-                                <div id="phraw"></div> M3 12345678910
+                                <div id="fmp1"></div>
                               </h6>
                             </div>
                           </td>
@@ -732,7 +703,7 @@
                   <div id="gaugeChartabc"></div>
                   <script>
                     // Create the gauge chart
-                    var chart = new JustGage({
+                    var chartfm2 = new JustGage({
                       id: "gaugeChartabc",
                       value: 150, // INSERT VALUE PRODUCT WATER 2 HERE
                       min: 0,
@@ -772,7 +743,7 @@
                             <div class="text-center">
                               <p class="text-xs font-weight-bold mb-0">Flowmeter 2:</p>
                               <h6 class="text-sm mb-0">
-                                <div id="phraw"></div> M3 12345678910
+                                <div id="fmp2"></div>
                               </h6>
                             </div>
                           </td>
@@ -798,7 +769,7 @@
                   <div id="gaugeChartabd"></div>
                   <script>
                     // Create the gauge chart
-                    var chart = new JustGage({
+                    var chartfm3 = new JustGage({
                       id: "gaugeChartabd",
                       value: 370, // INSERT VALUE PRODUCT WATER TOTAL HERE
                       min: 0,
@@ -838,7 +809,7 @@
                             <div class="text-center">
                               <p class="text-xs font-weight-bold mb-0">Flowmeter Total:</p>
                               <h6 class="text-sm mb-0">
-                                <div id="phraw"></div> M3 12345678910
+                                <div id="fmp3"></div>
                               </h6>
                             </div>
                           </td>
@@ -863,7 +834,7 @@
                           <div class="text-center">
                             <p class="text-xs font-weight-bold mb-0">Turbidity:</p>
                             <h6 class="text-sm mb-0">
-                              <div id="phproduct"></div> 2.0NTU
+                              <div id="tbdp"></div>
                             </h6>
                           </div>
                         </td>
@@ -883,7 +854,7 @@
                           <div class="text-center">
                             <p class="text-xs font-weight-bold mb-0">pH:</p>
                             <h6 class="text-sm mb-0">
-                              <div id="phproduct"></div> 7.0 pH
+                              <div id="phproduct"></div>
                             </h6>
                           </div>
                         </td>
@@ -903,7 +874,7 @@
                           <div class="text-center">
                             <p class="text-xs font-weight-bold mb-0">Chlor:</p>
                             <h6 class="text-sm mb-0">
-                              <div id="phproduct"></div> 0.8 ppm
+                              <div id="cproduct"></div>
                             </h6>
                           </div>
                         </td>
@@ -977,30 +948,27 @@
   // Create the gauge chart
   var ctx = document.getElementById('gaugeCharta')//.getContext('2d');
   // Create the gauge chart
-  function createchart(val) {
-    var chart = new JustGage({
-      id: "gaugeChart",
-      value: val, // INSERT VALUE RAW WATER HERE
-      min: 0,
-      max: 450,
-      title: "Gauge Chart",
-      label: "LPS",
-      levelColors: ["#4e73df"],
-      gaugeWidthScale: 0.4,
-      counter: true,
-      pointer: true,
-      pointerOptions: {
-        toplength: -12,
-        bottomlength: 10,
-        bottomwidth: 8,
-        color: "#ffffff",
-        stroke: "000000",
-        stroke_width: 1,
-        stroke_linecap: "round"
-      }
-    });
-  }
-  createchart(375);
+  var chartraw = new JustGage({
+    id: "gaugeChart",
+    value: 150, // INSERT VALUE RAW WATER HERE
+    min: 0,
+    max: 450,
+    title: "Gauge Chart",
+    label: "LPS",
+    levelColors: ["#4e73df"],
+    gaugeWidthScale: 0.4,
+    counter: true,
+    pointer: true,
+    pointerOptions: {
+      toplength: -12,
+      bottomlength: 10,
+      bottomwidth: 8,
+      color: "#ffffff",
+      stroke: "000000",
+      stroke_width: 1,
+      stroke_linecap: "round"
+    }
+  });
   //////////////////////////GLOBAL VARIABLE////////////////
   var totalizerData = [
     { data: [], diffElementId: "diffTRW", diffElementSuffix: "TRW", elementId: "Totalizer_Raw_Water", dataKey: "Totalizer_Raw" },
@@ -1010,28 +978,51 @@
     { data: [], diffElementId: "diffTBW", diffElementSuffix: "TBW", elementId: "Totalizer_Backwash_Water", dataKey: "TOTALIZER_TBW" },
     { data: [], diffElementId: "diffreservoir", diffElementSuffix: "reservoir", elementId: "Reservoir_Volume", dataKey: "Reservoir_Volume" }
   ];
+  var elementsToUpdate = [
+    { id: "traw1", key: "Totalizer_Raw", unit: " m3" },
+    { id: "traw2", key: "Totalizer_Raw", unit: " m3" },
+    { id: "frraw", key: "Flow_Rate_Raw", unit: " LPS" },
+    { id: "tbdraw", key: "Turbidity_Raw", unit: " NTU" },
+    { id: "phraw", key: "pH_Raw", unit: "" },
+    { id: "rvol", key: "Reservoir_Volume", unit: " m3" },
+    { id: "fmp1", key: "FLOWRATE_PRODUCT_1", unit: " LPS" },
+    { id: "fmp2", key: "FLOWRATE_PRODUCT_2", unit: " LPS" },
+    { id: "fmp3", key: "Flow_Rate_Product", unit: " LPS" },
+    { id: "tbdp", key: "Turbidity_Product", unit: " NTU" },
+    { id: "phproduct", key: "pH_Product", unit: "" },
+    { id: "cproduct", key: "Chlorine_Product", unit: " ppm" },
+    { id: "tbds1", key: "Turbidity_Sedimentation_A", unit: " NTU" },
+    { id: "tbds2", key: "Turbidity_Sedimentation_B", unit: " NTU" }
+  ];
+  function addSeparator(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 
   function updateDiffElement(diffElement, diffValue) {
     var diffplusmin = diffValue < 0 ? "-" : "+";
+    var formattedDiff = addSeparator(Math.abs(diffValue).toFixed(2));
     diffElement.classList.add(diffValue < 0 ? "text-danger" : "text-success");
-    diffElement.innerHTML = diffplusmin + Math.abs(diffValue).toFixed(2);
+    diffElement.innerHTML = `${diffplusmin}${formattedDiff}`;
   }
 
   function processData(data, len, dataIndex) {
     var totalizer = totalizerData[dataIndex];
     var diffElement = document.getElementById(totalizer.diffElementId);
     totalizer.data = data.map(item => item[totalizer.dataKey]);
-    var diffpersent = totalizer.data[len - 1] - totalizer.data[0];
-    document.getElementById(totalizer.elementId).innerHTML = totalizer.data[len - 1].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-    if (dataIndex == 0) {
-      document.getElementById("traw1").innerHTML = data[len - 1]['Totalizer_Raw'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " m3";
-      document.getElementById("traw2").innerHTML = data[len - 1]['Totalizer_Raw'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " m3";
-      document.getElementById("frraw").innerHTML = data[len - 1]['Flow_Rate_Raw'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " LPS";
-      document.getElementById("tbdraw").innerHTML = data[len - 1]['Turbidity_Raw'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " NTU";
-      document.getElementById("phraw").innerHTML = data[len - 1]['pH_Raw'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + "";
-      document.getElementById("rvol").innerHTML = data[len - 1]['Reservoir_Volume'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " m3";
+    var diffPercent = totalizer.data[len - 1] - totalizer.data[0];
+    document.getElementById(totalizer.elementId).innerHTML = addSeparator(totalizer.data[len - 1]);
+
+    updateDiffElement(diffElement, diffPercent);
+  }
+
+  function updateElementValues(data, len) {
+    var lastData = data[len - 1];
+    for (var i = 0; i < elementsToUpdate.length; i++) {
+      var elementInfo = elementsToUpdate[i];
+      var value = lastData[elementInfo.key];
+      var formattedValue = `${addSeparator(value)}${elementInfo.unit}`;
+      document.getElementById(elementInfo.id).innerHTML = formattedValue;
     }
-    updateDiffElement(diffElement, diffpersent);
   }
 
   function start() {
@@ -1042,6 +1033,13 @@
       if (this.readyState == 4 && this.status == 200) {
         var data = JSON.parse(this.responseText);
         var len = data.length;
+
+        updateElementValues(data, len);
+        chartraw.refresh(data[len-1].Flow_Rate_Raw);
+        chartreservoir.refresh(data[len-1].Reservoir_Level);
+        chartfm1.refresh(data[len-1].FLOWRATE_PRODUCT_1);
+        chartfm2.refresh(data[len-1].FLOWRATE_PRODUCT_2); 
+        chartfm3.refresh(data[len-1].Flow_Rate_Product);
         for (var i = 0; i < totalizerData.length; i++) {
           processData(data, len, i);
         }
@@ -1049,5 +1047,7 @@
       }
     };
   }
-  start();
+
+  setTimeout(start, 2000);
+
 </script>

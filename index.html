@@ -1,0 +1,824 @@
+<!--
+=========================================================
+* Argon Dashboard 2 - v2.0.4
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/faviconrev.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet">
+  <link id="pagestyle" href="./assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+  <title>
+    Water Treatment Plant - Drupadi Tirta Intan
+  </title>
+</head>
+
+<body class="g-sidenav-show bg-gray-100">
+  <div class="min-height-300 bg-primary position-absolute top-0 w-100" style="height: 40vh;"></div>
+  <aside
+    class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
+    id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+        aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0" href="  " target="_blank">
+        <img src="./assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
+        <span class="ms-1 font-weight-bold">WTP Drupadi Tirta Intan </span>
+      </a>
+    </div>
+    <hr class="horizontal dark mt-0">
+    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="./index.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./Overview2.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Overview</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./Dosing2.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Dosing</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./Clarifier2.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Clarifier</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./filter2.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Filter</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./Reservoir2.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Reservoir & Distribution</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./tables.html">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-bold-right text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Tables</span>
+          </a>
+        </li>
+        <li class="nav-item mt-3">
+    </div>
+  </aside>
+
+  <main class="main-content position-relative border-radius-lg ">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur"
+      data-scroll="false">
+      <div class="container-fluid py-1 px-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
+            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Dashboard</li>
+          </ol>
+          <h6 class="font-weight-bolder text-white mb-0">Dashboard</h6>
+        </nav>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="container-fluid py-4">
+      <div class="row">
+
+        <!-- Totalizer Raw Water -->
+        <div class="col-xl-6 col-sm-6 mb-xl-0">
+          <div class="card container-bg">
+            <div class="card-body p-4 pb-1">
+              <div class="row">
+                <div class="col-8">
+                  <p class="text-sm mb-0 text-uppercase font-weight-bold">Totalizer Raw Water</p>
+                  <h5 class="font-weight-bolder">
+                    <div id="Totalizer_Raw_Water"></div>
+                  </h5>
+                  <p class="pt-3 text-success text-sm font-weight-bolder">
+                  <div id="diffTRW" class="text-success"></div> since yesterday
+                  </p>
+                </div>
+                <div class="col-4 text-end">
+                  <i class='bx bxl-tailwind-css bx-flashing bx-lg gradient-text'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Totalizer Product water Total -->
+        <div class="col-xl-6 col-sm-6 mb-xl-0">
+          <div class="card container-bg">
+            <div class="card-body p-4 pb-1">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Totalizer Product Water</p>
+                    <h5 class="font-weight-bolder">
+                      <div id="Totalizer_Product_Water0"></div>
+                    </h5>
+                    <p class="pt-3">
+                      <span class="text-success text-sm font-weight-bolder">
+                        <div id="diffTPW0"></div> since yesterday
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <i class='bx bx-wind bx-flashing bx-lg gradient-text'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Totalizer Product Water 1 -->
+        <div class="col-xl-3 col-sm-6 mb-xl-0 pt-4">
+          <div class="card container-bg">
+            <div class="card-body p-4 pb-1">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Totalizer Product Water 1</p>
+                    <h5 class="font-weight-bolder">
+                      <div id="Totalizer_Product_Water1"></div>
+                    </h5>
+                    <p class="pt-3">
+                      <span class="text-success text-sm font-weight-bolder">
+                        <div id="diffTPW1"></div> since yesterday
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <i class='bx bxl-redux bx-spin bx-lg gradient-text'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Totalizer Product Water 2 -->
+        <div class="col-xl-3 col-sm-6 mb-xl-0 pt-4">
+          <div class="card container-bg">
+            <div class="card-body p-4 pb-1">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Totalizer Product Water 2</p>
+                    <h5 class="font-weight-bolder">
+                      <div id="Totalizer_Product_Water2"></div>
+                    </h5>
+                    <p class="pt-3">
+                      <span class="text-success text-sm font-weight-bolder">
+                        <div id="diffTPW2"></div> since yesterday
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <i class='bx bxl-redux bx-spin bx-lg gradient-text'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Totalizer Backwash Water -->
+        <div class="col-xl-3 col-sm-6 mb-xl-0 pt-4">
+          <div class="card container-bg">
+            <div class="card-body p-4 pb-1">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Totalizer Backwash Water</p>
+                    <h5 class="font-weight-bolder">
+                      <div id="Totalizer_Backwash_Water"></div>
+                    </h5>
+                    <p class="pt-3">
+                      <span class="text-success text-sm font-weight-bolder">
+                        <div id="diffTBW"></div> since yesterday
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <i class='bx bxl-flutter bx-flashing bx-lg gradient-text'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reservoir Volume -->
+        <div class="col-xl-3 col-sm-6 mb-xl-0 pt-4">
+          <div class="card container-bg">
+            <div class="card-body p-4 pb-1">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Reservoir Volume</p>
+                    <h5 class="font-weight-bolder">
+                      <div id="Reservoir_Volume"></div>
+                    </h5>
+                    <p style="padding-top: 2.3rem;">
+                      <span class="text-success text-sm font-weight-bolder">
+                        <div id="diffreservoir"></div> since yesterday
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <i class='bx bx-blanket bx-flashing bx-lg gradient-text'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mt-1">
+        <div class="col-lg-12 mb-lg-0 mb-4" style="height: 00px"> <!-- 3D -->
+          <div class="card z-index-2 h-100">
+
+
+            <!-- model-viewer -->
+            <model-viewer src="WTP-DTI2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-control disable-zoom
+              poster="poster.webp" shadow-intensity="0" exposure="1.5" camera-orbit="50.69deg 70.59deg 88.51m"
+              field-of-view="20.11deg" shadow-softness="0">
+
+            </model-viewer>
+            </model-viewer>
+            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+            </script>
+
+            <!-- Loads <model-viewer> for old browsers like IE11: -->
+            <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <!-- Raw Water Intake -->
+      <div class="row">
+        <div class="col-lg-6 mb-lg-0 mb-1 mt-1 pt-3">
+          <div class="card z-index-2 h-100">
+
+            <div class="card-header pb-0 pt-3 bg-transparent">
+              <p class="text-sm mb-0 text-uppercase font-weight-bold">Raw Water Intake</p>
+              <p class="text-sm mb-0">
+              <div id="diffTRW2"></div>
+              </p>
+            </div>
+            <div class="card-body p-4">
+
+              <div class="chart">
+                <script type="text/javascript"
+                  src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+                <script type="text/javascript"
+                  src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
+                <div id="gaugeChart"></div>
+
+              </div>
+              <div class="text-center">
+                <p class="text-md font-weight-bold mb-0">Flowmeter:</p>
+                <h5 class="text-xl font-weight-bolder mb-0">
+                  <div id="traw1"></div>
+                </h5>
+              </div>
+
+              <div class="card mt-3 pt-3">
+                <table class="table align-items-center ">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <i class='bx bx-chevron-right bx-flashing bx-md gradient-text'></i>
+                      </td>
+                      <td>
+                        <div class="text-align-left" style="margin-left: -3rem;">
+                          <p class="text-md font-weight-bold mb-0">Turbidity:</p>
+                          <h5 class="text-md font-weight-bolder mb-0">
+                            <div id="tbdraw"></div>
+                          </h5>
+                        </div>
+                      </td>
+                      <td>
+                        <i class='bx bx-chevron-right bx-flashing bx-md gradient-text'></i>
+                      </td>
+                      <td>
+                        <div class="text-align-left" style="margin-left: -3rem;">
+                          <p class="text-md font-weight-bold mb-0">pH Level:</p>
+                          <h5 class="text-md font-weight-bolder mb-0">
+                            <div id="phraw"></div>
+                          </h5>
+                        </div>
+                      </td>
+                      <td>
+                        <i class='bx bx-chevron-right bx-flashing bx-md gradient-text'></i>
+                      </td>
+                      <td>
+                        <div class="text-align-left" style="margin-left: -3rem;">
+                          <p class="text-md font-weight-bold mb-0">Flow Rate:</p>
+                          <h5 class="text-md font-weight-bolder mb-0">
+                            <div id="frraw"></div>
+                          </h5>
+                        </div>
+                      </td>
+                      <td>
+                        <i class='bx bx-chevron-right bx-flashing bx-md gradient-text'></i>
+                      </td>
+                      <td>
+                        <div class="text-align-left" style="margin-left: -3rem;">
+                          <p class="text-md font-weight-bold mb-0">Totalizer:</p>
+                          <h5 class="text-md font-weight-bolder mb-0">
+                            <div id="traw2"></div>
+                          </h5>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clarifier / Sedimen -->
+        <div class="col-lg-3 mb-1 pt-4">
+          <div class="card h-100">
+
+            <div class="card-header pb-0 pt-3 bg-transparent">
+              <p class="text-sm mb-0 text-uppercase font-weight-bold">Clarifier / Sedimen</p>
+              <p class="text-sm mb-0 font-weight-bold">
+              <div id="diffTPW2"></div>
+              </p>
+            </div>
+
+            <div class="card p-4 m-4">
+              <div class="row">
+                <div class="col-8">
+                  <p class="text-md mb-0">Turbidity A</p>
+                  <h5 class="font-weight-bolder">
+                    <div id="tbds1"></div>
+                  </h5>
+                </div>
+                <div class="col-4 text-end">
+                  <i class='bx bxs-analyse bx-spin bx-lg gradient-text'></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card p-4 m-4">
+              <div class="row">
+                <div class="col-8">
+                  <p class="text-md mb-0">Turbidity B</p>
+                  <h5 class="font-weight-bolder">
+                    <div id="tbds2"></div>
+                  </h5>
+                </div>
+                <div class="col-4 text-end">
+                  <i class='bx bxs-analyse bx-spin bx-lg gradient-text'></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 mb-lg-0 pt-4 pb-0">
+          <div class="card z-index-2 h-100">
+
+            <div class="card-header pb-0 pt-3 bg-transparent">
+              <p class="text-sm mb-0 text-uppercase font-weight-bold">Level Reservoir</p>
+              <p class="text-sm mb-0">
+                <span class="font-weight-bold">
+                  <div id="diffTPW2"> </div>
+                </span>
+              </p>
+            </div>
+
+            <div class="card-body p-3 pb-0 pt-5">
+              <div class="chart">
+                <script type="text/javascript"
+                  src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+                <script type="text/javascript"
+                  src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
+                <div id="gaugeCharta"></div>
+                <script>
+                  var chartreservoir = new JustGage({
+                    id: "gaugeCharta",
+                    value: 275, // INSERT VALUE LEVEL RESERVOIR HERE
+                    min: 0,
+                    max: 350,
+                    title: "Gauge Chart",
+                    label: "cm",
+                    levelColors: ["#4e73df"],
+                    gaugeWidthScale: 0.7,
+                    counter: true,
+                    pointer: true,
+                    pointerOptions: {
+                      toplength: 0,
+                      bottomlength: 10,
+                      bottomwidth: 0,
+                      color: "#ffffff",
+                      stroke: "000000",
+                      stroke_width: 4,
+                      stroke_linecap: "round"
+                    }
+                  });
+                </script>
+              </div>
+
+              <div class="card mt-3 mb-0 m-2 text-center">
+                <i class='bx bx-chevron-down bx-flashing bx-md gradient-text'></i>
+                <p class="text-md font-weight-bold mb-0">Reservoir Volume</p>
+                <h5 class="text-md font-weight-bolder mb-3">
+                  <div id="rvol"></div>
+                </h5>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mt-1">
+        <div class="col-lg-12 mb-lg-0 mb-4 pt-4">
+          <div class="card ">
+            <div class="card-header pb-0 p-3">
+              <div class="d-flex justify-content-between">
+                <p class="text-sm mb-0 text-uppercase font-weight-bold">Product Water</p>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <!-- flowmeter 1 -->
+              <div class="col-lg-3 mb-lg-0 pt-5">
+                <div class="chart">
+                  <script type="text/javascript"
+                    src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+                  <script type="text/javascript"
+                    src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
+                  <div id="gaugeChartab"></div>
+                  <script>
+                    // Create the gauge chart
+                    var chartfm1 = new JustGage({
+                      id: "gaugeChartab",
+                      value: 220,
+                      min: 0,
+                      max: 450,
+                      title: "Gauge Chart",
+                      label: "LPS",
+                      levelColors: ["#4e73df"],
+                      gaugeWidthScale: 0.7,
+                      counter: true,
+                      pointer: true,
+                      pointerOptions: {
+                        toplength: 0,
+                        bottomlength: 10,
+                        bottomwidth: 0,
+                        color: "#ffffff",
+                        stroke: "000000",
+                        stroke_width: 4,
+                        stroke_linecap: "round"
+                      }
+                    });
+                  </script>
+                </div>
+                <div class="text-center">
+                  <p class="text-md font-weight-bold mb-0">Flowmeter 1:</p>
+                  <h5 class="text-xl font-weight-bolder mb-0">
+                    <div id="fmp1"></div>
+                  </h5>
+                </div>
+              </div>
+
+              <!-- flowmeter 2 -->
+              <div class="col-lg-3 mb-lg-0 pt-5">
+                <div class="chart">
+                  <script type="text/javascript"
+                    src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+                  <script type="text/javascript"
+                    src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
+                  <div id="gaugeChartabc"></div>
+                  <script>
+                    // Create the gauge chart
+                    var chartfm2 = new JustGage({
+                      id: "gaugeChartabc",
+                      value: 150, // INSERT VALUE PRODUCT WATER 2 HERE
+                      min: 0,
+                      max: 450,
+                      title: "Gauge Chart",
+                      label: "LPS",
+                      levelColors: ["#4e73df"],
+                      gaugeWidthScale: 0.7,
+                      counter: true,
+                      pointer: true,
+                      pointerOptions: {
+                        toplength: 0,
+                        bottomlength: 10,
+                        bottomwidth: 0,
+                        color: "#ffffff",
+                        stroke: "000000",
+                        stroke_width: 4,
+                        stroke_linecap: "round"
+                      }
+                    });
+                  </script>
+                </div>
+                <div class="text-center">
+                  <p class="text-md font-weight-bold mb-0">Flowmeter 2:</p>
+                  <h5 class="text-xl font-weight-bolder mb-0">
+                    <div id="fmp2"></div>
+                  </h5>
+                </div>
+              </div>
+
+              <!-- flowmeter 3 -->
+              <div class="col-lg-3 mb-lg-0 pt-5">
+                <div class="chart">
+                  <script type="text/javascript"
+                    src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+                  <script type="text/javascript"
+                    src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
+                  <div id="gaugeChartabd"></div>
+                  <script>
+                    // Create the gauge chart
+                    var chartfm3 = new JustGage({
+                      id: "gaugeChartabd",
+                      value: 370, // INSERT VALUE PRODUCT WATER TOTAL HERE
+                      min: 0,
+                      max: 450,
+                      title: "Gauge Chart",
+                      label: "LPS",
+                      levelColors: ["#4e73df"],
+                      gaugeWidthScale: 0.7,
+                      counter: true,
+                      pointer: true,
+                      pointerOptions: {
+                        toplength: 0,
+                        bottomlength: 10,
+                        bottomwidth: 0,
+                        color: "#ffffff",
+                        stroke: "000000",
+                        stroke_width: 4,
+                        stroke_linecap: "round"
+                      }
+                    });
+                  </script>
+                </div>
+                <div class="text-center">
+                  <p class="text-md font-weight-bold mb-0">Flowmeter Total:</p>
+                  <h5 class="text-xl font-weight-bolder mb-0">
+                    <div id="fmp3"></div>
+                  </h5>
+                </div>
+              </div>
+
+              <!-- TBD PH Chlorine -->
+              <div class="col-lg-3 mb-lg-0 pb-3" style="margin-top: -2rem;">
+                <div class="card p-3 m-3">
+                  <div class="d-flex align-items-center">
+                    <i class='bx bx-chevron-right bx-flashing bx-md gradient-text'></i>
+                    <div class="ml-3 text-align-left">
+                      <p class="text-md font-weight-bold mb-0">Turbidity:</p>
+                      <h5 class="text-md font-weight-bolder mb-0">
+                        <div id="tbdp"></div>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-3 m-3">
+                  <div class="d-flex align-items-center">
+                    <i class='bx bx-chevron-right bx-flashing bx-md gradient-text'></i>
+                    <div class="ml-3 text-align-left">
+                      <p class="text-md font-weight-bold mb-0">pH:</p>
+                      <h5 class="text-md font-weight-bolder mb-0">
+                        <div id="phproduct"></div>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-3 m-3">
+                  <div class="d-flex align-items-center">
+                    <i class='bx bx-chevron-right bx-flashing bx-md gradient-text'></i>
+                    <div class="ml-3 text-align-left">
+                      <p class="text-md font-weight-bold mb-0">Chlor:</p>
+                      <h5 class="text-md font-weight-bolder mb-0">
+                        <div id="cproduct"></div>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer pt-3  ">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-lg-between">
+            <div class="col-lg-6 mb-lg-0 mb-4">
+              <div class="copyright text-center text-sm text-muted text-lg-start">
+                ©
+                <script>
+                  document.write(new Date().getFullYear())
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/chartjs.min.js"></script>
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="./assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+</body>
+
+</html>
+
+<script>
+  var chartData = {
+    datasets: [{
+      data: [75],
+      backgroundColor: '#4e73df',
+      borderWidth: 0
+    }]
+  };
+
+  // Create the gauge chart
+  var ctx = document.getElementById('gaugeCharta')//.getContext('2d');
+  // Create the gauge chart
+  var chartraw = new JustGage({
+    id: "gaugeChart",
+    value: 157, // INSERT VALUE RAW WATER HERE
+    min: 0,
+    max: 450,
+    title: "Gauge Chart",
+    label: "LPS",
+    levelColors: ["#4e73df"],
+    gaugeWidthScale: 0.7,
+    counter: true,
+    pointer: true,
+    pointerOptions: {
+      toplength: 0,
+      bottomlength: 10,
+      bottomwidth: 0,
+      color: "#ffffff",
+      stroke: "000000",
+      stroke_width: 4,
+      stroke_linecap: "round"
+    }
+  });
+  //////////////////////////GLOBAL VARIABLE////////////////
+  var totalizerData = [
+    { data: [], diffElementId: "diffTRW", diffElementSuffix: "TRW", elementId: "Totalizer_Raw_Water", dataKey: "Totalizer_Raw" },
+    { data: [], diffElementId: "diffTPW0", diffElementSuffix: "TPW0", elementId: "Totalizer_Product_Water0", dataKey: "Totalizer_Product" },
+    { data: [], diffElementId: "diffTPW1", diffElementSuffix: "TPW1", elementId: "Totalizer_Product_Water1", dataKey: "TOTALIZER_PRODUCT_1" },
+    { data: [], diffElementId: "diffTPW2", diffElementSuffix: "TPW2", elementId: "Totalizer_Product_Water2", dataKey: "TOTALIZER_PRODUCT_2" },
+    { data: [], diffElementId: "diffTBW", diffElementSuffix: "TBW", elementId: "Totalizer_Backwash_Water", dataKey: "TOTALIZER_TBW" },
+    { data: [], diffElementId: "diffreservoir", diffElementSuffix: "reservoir", elementId: "Reservoir_Volume", dataKey: "Reservoir_Volume" }
+  ];
+  var elementsToUpdate = [
+    { id: "traw1", key: "Totalizer_Raw", unit: " m&sup3" },
+    { id: "traw2", key: "Totalizer_Raw", unit: " m&sup3" },
+    { id: "frraw", key: "Flow_Rate_Raw", unit: " LPS" },
+    { id: "tbdraw", key: "Turbidity_Raw", unit: " NTU" },
+    { id: "phraw", key: "pH_Raw", unit: "" },
+    { id: "rvol", key: "Reservoir_Volume", unit: " m&sup3" },
+    { id: "fmp1", key: "FLOWRATE_PRODUCT_1", unit: " LPS" },
+    { id: "fmp2", key: "FLOWRATE_PRODUCT_2", unit: " LPS" },
+    { id: "fmp3", key: "Flow_Rate_Product", unit: " LPS" },
+    { id: "tbdp", key: "Turbidity_Product", unit: " NTU" },
+    { id: "phproduct", key: "pH_Product", unit: "" },
+    { id: "cproduct", key: "Chlorine_Product", unit: " ppm" },
+    { id: "tbds1", key: "Turbidity_Sedimentation_A", unit: " NTU" },
+    { id: "tbds2", key: "Turbidity_Sedimentation_B", unit: " NTU" }
+  ];
+  function addSeparator(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  function updateDiffElement(diffElement, diffValue) {
+    var diffplusmin = diffValue < 0 ? "-" : "+";
+    var formattedDiff = addSeparator(Math.abs(diffValue).toFixed(2));
+    diffElement.classList.add(diffValue < 0 ? "text-danger" : "text-success");
+    diffElement.innerHTML = `${diffplusmin}${formattedDiff}`;
+  }
+
+  function processData(data, len, dataIndex) {
+    var totalizer = totalizerData[dataIndex];
+    var diffElement = document.getElementById(totalizer.diffElementId);
+    totalizer.data = data.map(item => item[totalizer.dataKey]);
+    var diffPercent = totalizer.data[len - 1] - totalizer.data[0];
+    document.getElementById(totalizer.elementId).innerHTML = addSeparator(totalizer.data[len - 1]);
+
+    updateDiffElement(diffElement, diffPercent);
+  }
+
+  function updateElementValues(data, len) {
+    var lastData = data[len - 1];
+    for (var i = 0; i < elementsToUpdate.length; i++) {
+      var elementInfo = elementsToUpdate[i];
+      var value = lastData[elementInfo.key];
+      var formattedValue = `${addSeparator(value)}${elementInfo.unit}`;
+      document.getElementById(elementInfo.id).innerHTML = formattedValue;
+    }
+  }
+
+  function start() {
+    var http = new XMLHttpRequest();
+    http.open("GET", "http://127.0.0.1:1887/GetCurrent", true);
+    http.send();
+    http.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var data = JSON.parse(this.responseText);
+        var len = data.length;
+
+        updateElementValues(data, len);
+        chartraw.refresh(data[len - 1].Flow_Rate_Raw);
+        chartreservoir.refresh(data[len - 1].Reservoir_Level);
+        chartfm1.refresh(data[len - 1].FLOWRATE_PRODUCT_1);
+        chartfm2.refresh(data[len - 1].FLOWRATE_PRODUCT_2);
+        chartfm3.refresh(data[len - 1].Flow_Rate_Product);
+        for (var i = 0; i < totalizerData.length; i++) {
+          processData(data, len, i);
+        }
+        setTimeout(start, 1000);
+      }
+    };
+  }
+
+  setTimeout(start, 2000);
+</script>
